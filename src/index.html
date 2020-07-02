@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CurseForge Stats Viewer</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="w3.css">
+    </head>
+    <body>
+        <h1>💖 Hello World!</h1>
+
+        <input type="file" id="fIn" accept=".csv" onchange="onFileSelected()">
+
+        <canvas id="totalDlChart" width="700" height="200"></canvas>
+        <canvas id="dailyDlChart" width="700" height="200"></canvas>
+
+        <script src="page.js"></script>
+
+        <div id="id01" class="w3-modal" style="display: none;">
+            <div class="w3-modal-content">
+                <header class="w3-container w3-red"> 
+                    <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                    <h2>Oopsie!</h2>
+                </header>
+                <div class="w3-container">
+                    <p>Did you think that was a CurseForge analytics CSV?</p>
+                    <p>Well it wasnt.</p>
+                    <div class="closeBtnContainer">
+                        <button onclick="document.getElementById('id01').style.display='none'" class="closeBtn">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
