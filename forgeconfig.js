@@ -30,9 +30,11 @@ module.exports = {
             config: {
                 repository: {
                   owner: 'Geek202',
-                  name: 'CurseStatsView'
+                  name: 'CurseStatsView',
+                  authToken: process.env.GITHUB_TOKEN
                 },
-                prerelease: false
+                prerelease: false,
+                draft: true
               }
         }
     ]
